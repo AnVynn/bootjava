@@ -4,7 +4,7 @@ spring:
     show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     properties:
       #  http://docs.jboss.org/hibernate/orm/5.3/userguide/html_single/Hibernate_User_Guide.html#configurations
       hibernate:
@@ -59,3 +59,5 @@ server.servlet:
 #    visibility.getter: none
 #    visibility.setter: none
 #    visibility.is-getter: none
+
+spring.jpa.defer-datasource-initialization: true
